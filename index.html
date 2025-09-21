@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavirign</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Unbounded:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .pigment-indigo {
+            color: #3F0081;
+            background-color: #3F0081;
+        }
+
+        .bg-pigment-indigo {
+            background-color: #3F0081;
+        }
+
+        .text-pigment-indigo {
+            color: #FFF;
+        }
+
+        .hover\:bg-pigment-indigo:hover {
+            color: #3F0081 !important;
+            background-color: #AA81F5;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Unbounded', sans-serif !important;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body class="font-inter bg-[#09060B] text-white">
+    <div class="min-h-screen">
+        <!-- Navbar -->
+        <nav class="bg-[#09060B] py-6">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <div class="flex space-x-2">
+                            <span class="text-4xl font-extrabold tracking-wide text-[#3F0081]">
+                                xavirgin<span class="text-white">.com</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                            <!-- <a href="#" class="text-lg hover:text-[#AA81F5]">Services</a>
+                            <a href="#" class="text-lg hover:text-[#AA81F5]">Portfolio</a>
+                            <a href="#" class="text-lg hover:text-[#AA81F5]">About</a> -->
+                        </div>
+                        <div class="flex space-x-4 ">
+                            <button
+                                class=" border border-white px-4 py-2 rounded-lg text-pigment-indigo">Contact</button>
+                            <button class="border border-white px-4 py-2 rounded-lg text-pigment-indigo">Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="py-12">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 px-2">
+                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Who we are</span>
+                    <h1 class="font-unbounded text-4xl md:text-6xl font-bold mt-4 leading-tight">Digital Innovation at
+                        the Speed of Imagination</h1>
+                    <p class="text-lg mt-4 text-gray-300">We are a forward-thinking technology partner dedicated to
+                        transforming complex business challenges into seamless digital experiences. Our team of expert
+                        developers and strategists crafts innovative solutions that drive meaningful results.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <button class="text-[#09060B] px-6 py-3 rounded-lg ">OUR CLIENTS</button>
+
+                    </div>
+                    <div class="mt-8 flex space-x-6">
+                        <a href="https://gandhibhavan.org" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/gandhibhavan.png" alt="gandhibhavan.org" class="h-12">
+                        </a>
+                        <a href="https://datavalley.in" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/datavalley.png" alt="datavalley.in" class="h-12">
+                        </a>
+                        <a href="https://carollia.com" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/Carollia Lifestyle.webp" alt="carollia.com" class="h-12">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/assets/group-people-working-team.jpg" alt="Team collaboration" class="w-full rounded-lg">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Tech Stack Section -->
+        <section class="py-14 bg-[#09060B]">
+            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our Tech Stack</span>
+                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4 text-white">
+                        Powering Innovation with Modern Technologies
+                    </h2>
+                    <p class="text-lg mt-4 text-gray-300 max-w-2xl mx-auto">
+                        We leverage cutting-edge frameworks and tools to build scalable, secure, and future-ready
+                        digital solutions.
+                    </p>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Flutter -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/flutter.png" alt="Flutter" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">Flutter</h3>
+                        <p class="text-gray-300 mt-2">Cross-platform mobile apps with native performance and expressive
+                            UIs.</p>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/Node.js_logo.svg" alt="Node.js" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">Node.js</h3>
+                        <p class="text-gray-300 mt-2">High-performance backend services and APIs with JavaScript
+                            runtime.</p>
+                    </div>
+
+                    <!-- Laravel -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/Laravel.png" alt="Laravel" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">Laravel</h3>
+                        <p class="text-gray-300 mt-2">Elegant PHP framework for robust and scalable web applications.
+                        </p>
+                    </div>
+
+                    <!-- React -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/React-icon.png" alt="React" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">React</h3>
+                        <p class="text-gray-300 mt-2">Dynamic and responsive frontends with component-based
+                            architecture.</p>
+                    </div>
+
+                    <!-- Django -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/django-logo-negative.png" alt="Django" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">Django</h3>
+                        <p class="text-gray-300 mt-2">Secure and scalable Python framework for rapid web development.
+                        </p>
+                    </div>
+
+                    <!-- Odoo -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
+                        <img src="/assets/Odoo_logo_rgb.svg.png" alt="Odoo" class="h-16 mx-auto mb-4">
+                        <h3 class="font-unbounded text-xl font-bold text-white">Odoo</h3>
+                        <p class="text-gray-300 mt-2">All-in-one ERP solution to streamline and automate business
+                            processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="py-14">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our expertise</span>
+                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">Comprehensive Digital Solutions</h2>
+                    <p class="text-lg mt-4 text-gray-300">Tailored technology services for modern businesses</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Mobile -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg">
+                        <img src="/assets/app-dev.jpg" alt="Web icon" class="h-150 mb-4">
+                        <h3 class="font-unbounded text-2xl font-bold mt-4">Mobile Application Development</h3>
+                        <p class="text-lg mt-4 text-gray-300">
+                            Custom mobile apps designed to enhance user engagement and streamline business processes.
+                        </p>
+                        <div class="mt-6 flex space-x-4">
+                            <button class="text-[#09060B] px-6 py-3 rounded-lg">Explore</button>
+                            <button
+                                class="flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:text-[#09060B]">
+                                <span>Learn more</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Web -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg">
+                        <img src="/assets/web-app.jpg" alt="Web icon" class="h-150 mb-4">
+                        <h3 class="font-unbounded text-xl font-bold">Web Development</h3>
+                        <p class="text-lg text-gray-300">
+                            Responsive and dynamic websites that capture your brand's unique digital identity.
+                        </p>
+                        <button
+                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
+                            <span>Learn more</span>
+                        </button>
+                    </div>
+
+                    <!-- ERP -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg">
+                        <img src="/assets/7046464.jpg" alt="ERP icon" class="h-150 mb-4">
+                        <h3 class="font-unbounded text-xl font-bold">ERP Solutions</h3>
+                        <p class="text-lg text-gray-300">
+                            Integrated enterprise resource planning systems to optimize your business operations.
+                        </p>
+                        <button
+                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
+                            <span>Learn more</span>
+                        </button>
+                    </div>
+
+                    <!-- AI -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg">
+                        <img src="/assets/852.jpg" alt="AI icon" class="h-150 mb-4">
+                        <h3 class="font-unbounded text-xl font-bold">AI Integration</h3>
+                        <p class="text-lg text-gray-300">
+                            Intelligent AI solutions that transform your digital platforms with advanced machine
+                            learning capabilities.
+                        </p>
+                        <button
+                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
+                            <span>Learn more</span>
+                        </button>
+                    </div>
+
+                    <!-- Chatbot -->
+                    <div class="bg-[#2D2A32] p-6 rounded-lg">
+                        <img src="/assets/chat-bot.jpg" alt="Chatbot icon" class="h-85 mb-4">
+                        <h3 class="font-unbounded text-xl font-bold">Chatbot Development</h3>
+                        <p class="text-lg text-gray-300">
+                            Smart conversational interfaces that enhance customer interaction and support.
+                        </p>
+                        <button
+                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
+                            <span>Learn more</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Header Section -->
+        <section class="bg-[#2D2A32] py-14 px-14">
+            <div class=" mx-auto px-8 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-unbounded text-2xl md:text-6xl font-bold">Transforming Digital Landscapes with
+                    Innovative Technology</h2>
+                <p class="text-lg mt-4 text-gray-300 max-w-3xl mx-auto text-2xl">Xavirign delivers cutting-edge digital
+                    solutions
+                    that empower businesses to thrive in the modern technological ecosystem.</p>
+                <div class="mt-6 flex justify-center space-x-4">
+                    <button class="bg-[#3F0081] text-white px-6 py-3 rounded-lg hover:text-[#3F0081]">
+                        Explore
+                    </button>
+
+                    <button
+                        class="border border-white text-white px-6 py-3 rounded-lg  hover:text-[#3F0081]">Contact</button>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="py-14 bg-[#2D2A32]">
+            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our Customers</span>
+                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">What Our Clients Say</h2>
+                    <p class="text-lg mt-4 text-gray-300 max-w-3xl mx-auto">
+                        Hear directly from our partners and clients about their experience working with us.
+                    </p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-300 text-lg italic">
+                            "The mobile app they built for us transformed how we connect with our customers.
+                            Reliable, scalable, and beautifully designed."
+                        </p>
+                        <div class="mt-6 flex items-center space-x-4">
+                            <img src="/assets/person1.png" alt="Client 1" class="w-16 h-16 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-white">John Mathews</h4>
+                                <span class="text-sm text-gray-400">CEO, TechNova</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-300 text-lg italic">
+                            "Professional team, clear communication, and the ERP solution exceeded our expectations.
+                            Highly recommend their services."
+                        </p>
+                        <div class="mt-6 flex items-center space-x-4">
+                            <img src="/assets/person3.png" alt="Client 2" class="w-16 h-16 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-white">Anita George</h4>
+                                <span class="text-sm text-gray-400">COO, GreenLeaf Enterprises</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-300 text-lg italic">
+                            "Their chatbot integration reduced our customer support load by 40%.
+                            The results speak for themselves."
+                        </p>
+                        <div class="mt-6 flex items-center space-x-4">
+                            <img src="/assets/person2.jpg" alt="Client 3" class="w-16 h-16 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-bold text-white">Ravi Kumar</h4>
+                                <span class="text-sm text-gray-400">Head of Operations, BrightMart</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="py-14">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Connect</span>
+                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">Contact Us</h2>
+                    <p class="text-lg mt-4 text-gray-300">Ready to transform your digital strategy? Let's discuss how we
+                        can help your business innovate.</p>
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex items-center space-x-4">
+                            <i class="material-icons h-6 w-6">contact_mail</i>
+                            <div>
+                                <h4 class="font-unbounded text-lg font-bold">Email</h4>
+                                <a href="mailto:hello@xavirign.com" class="text-[#AA81F5]">hello@xavirign.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="material-icons h-6 w-6">contact_phone</i>
+                            <div>
+                                <h4 class="font-unbounded text-lg font-bold">Phone</h4>
+                                <a href="tel:+15551234567" class="text-[#AA81F5]">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="material-icons">location_city</i>
+                            <div>
+                                <h4 class="font-unbounded text-lg font-bold">Office</h4>
+                                <p class="text-gray-300">Kompara, Nad P.O., Kerala – 683563, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/assets/location.png" alt="Contact image" class="w-full rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#09060B] py-12">
+            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                       
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-unbounded text-lg font-bold">Address</h4>
+                                <p class="text-gray-300">Kompara, Nad P.O., Kerala – 683563, India</p>
+                            </div>
+                            <div>
+                                <h4 class="font-unbounded text-lg font-bold">Contact</h4>
+                                <p class="text-gray-300">+91 7012545907</p>
+                                <a href="mailto:info@xavirign.com" class="text-[#AA81F5]">savioalwd@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" class="h-6 w-6"></a>
+                            <a href="#"><img src="/assets/icons/instagram.png" alt="Instagram" class="h-6 w-6"></a>
+                            <a href="#"><img src="/assets/icons/github.png" alt="X" class="h-6 w-6"></a>
+
+                        </div>
+                    </div>
+                    <div class="flex justify-between md:col-span-2">
+                        <div class="space-y-2">
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Services</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Case studies</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">About us</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Careers</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Blog</a>
+                        </div>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Resources</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Community</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Partners</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Events</a>
+                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-12 border-t border-[#21201D] pt-6 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300">© 2025 Xavirign. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Privacy policy</a>
+                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Terms of service</a>
+                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Cookie settings</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
