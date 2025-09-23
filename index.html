@@ -2,432 +2,2170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xavirign</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Unbounded:wght@700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-        }
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Copyright" content="xavirgin.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Xavirgin" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="English" />
+  <meta name="application-name" content="Xavirgin" />
+  <meta name="description"
+    content="Xavirgin: AI-driven software, automation, and digital solutions empowering SMBs, students, and underserved communities." />
+  <meta name="keywords"
+    content="AI, Agentic AI, Automation, Software Solutions, SMBs, Students, Digital Transformation" />
 
-        .pigment-indigo {
-            color: #3F0081;
-            background-color: #3F0081;
-        }
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="Xavirgin | AI-Driven Digital Solutions" />
+  <meta name="twitter:description"
+    content="Empowering SMBs, students, and communities with AI-driven software and automation." />
+  <meta name="twitter:image" content="./assets/img/xavirgin-cover.png" />
 
-        .bg-pigment-indigo {
-            background-color: #3F0081;
-        }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Xavirgin | AI-Driven Digital Solutions" />
+  <meta property="og:site_name" content="Xavirgin" />
+  <meta property="og:description"
+    content="Empowering SMBs, students, and communities with AI-driven software and automation." />
+  <meta property="og:image" content="./assets/img/xavirgin-cover.png" />
+  <meta property="og:url" content="https://xavirgin.com" />
+  <meta property="og:type" content="website" />
 
-        .text-pigment-indigo {
-            color: #FFF;
-        }
+  <!-- Windows / Theme -->
+  <meta name="msapplication-TileColor" content="#3d63dd" />
+  <meta name="msapplication-TileImage" content="./assets/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#3d63dd" />
 
-        .hover\:bg-pigment-indigo:hover {
-            color: #3F0081 !important;
-            background-color: #AA81F5;
-        }
+  <!-- Page Title -->
+  <title>Xavirgin | AI-Driven Digital Solutions</title>
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Unbounded', sans-serif !important;
-            font-weight: 700;
-        }
-    </style>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://xavirgin.com" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/web-app-manifest-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/web-app-manifest-512x512.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest.json" />
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#3d63dd" />
+
+  <!-- CSS Plugins -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body class="font-inter bg-[#09060B] text-white">
-    <div class="min-h-screen">
-        <!-- Navbar -->
-        <nav class="bg-[#09060B] py-6">
-            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex items-center mb-4 md:mb-0">
-                        <div class="flex space-x-2">
-                            <span class="text-4xl font-extrabold tracking-wide text-[#3F0081]">
-                                xavirgin<span class="text-white">.com</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-                        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
-                            <!-- <a href="#" class="text-lg hover:text-[#AA81F5]">Services</a>
-                            <a href="#" class="text-lg hover:text-[#AA81F5]">Portfolio</a>
-                            <a href="#" class="text-lg hover:text-[#AA81F5]">About</a> -->
-                        </div>
-                        <div class="flex space-x-4 ">
-                            <button
-                                class=" border border-white px-4 py-2 rounded-lg text-pigment-indigo">Contact</button>
-                            <button class="border border-white px-4 py-2 rounded-lg text-pigment-indigo">Demo</button>
-                        </div>
-                    </div>
-                </div>
+
+<body>
+  <!-- Page loading -->
+  <div
+    class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+    role="status" aria-live="polite" aria-atomic="true" aria-label="Loading...">
+    <div class="grid-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent" role="banner"
+    aria-label="Navigation bar">
+    <div class="container">
+      <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
+        <div class="flex items-center px-5 py-4 w-60 lg:w-56 max-w-full">
+          <a href="."
+            class=" ic-page-scroll  text-3xl font-bold tracking-tight text-body-light-12 group-hover:text-primary dark:text-body-dark-12 hover:text-primary-hover transition-colors">
+            Xavirgin.com
+          </a>
+        </div>
+
+        <div class="flex w-full items-center justify-between px-5">
+          <div>
+            <button type="button"
+              class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+              data-web-toggle="navbar-collapse" data-web-target="navbarMenu" aria-expanded="false"
+              aria-label="Toggle navigation menu">
+              <i class="lni lni-menu"></i>
+            </button>
+
+            <nav id="navbarMenu"
+              class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+              <ul class="block lg:flex" role="menu" aria-label="Navigation menu">
+                <li class="group relative">
+                  <a href="#home"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                    role="menuitem">Home</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#services"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Services</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#portfolio"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Portfolio</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#pricing"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Pricing</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#team"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Team</a>
+                </li>
+
+                <li class="group relative">
+                  <a href="#contact"
+                    class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                    role="menuitem">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+            <button type="button" class="inline-flex items-center text-primary-color text-[24px]/none"
+              aria-label="Switch theme" data-web-trigger="web-theme"></button>
+            <div class="hidden sm:flex">
+              <a href="javascript:void(0)"
+                class="btn-navbar ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20 text-base font-medium text-primary-color hover:bg-opacity-100 hover:text-primary"
+                role="button">Get Started</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main relative">
+    <!-- Hero section -->
+    <section id="home"
+      class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]">
+      <div class="container">
+        <div class="-mx-5 flex flex-wrap items-center">
+          <div class="w-full px-5">
+            <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+              <h1
+                class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
+                Transforming Digital Landscapes with Innovative Technology
+              </h1>
+
+              <p class="mx-auto mb-9 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal">
+                Xavirign delivers cutting-edge digital solutions that empower businesses, students, and underserved
+                communities to thrive in the modern technological ecosystem.
+              </p>
+
+              <ul class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5">
+                <li>
+                  <a href="javascript:void(0)"
+                    class="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
+                    role="button">Explore Services</a>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0)"
+                    class="video-popup flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
+                    role="button"><i class="lni lni-play text-lg/none"></i> Watch Intro</a>
+                </li>
+              </ul>
+
+              <div>
+                <p class="mb-4 text-center text-primary-color">Trusted by Leading Brands</p>
+
+                <div class="scroll-revealed flex items-center justify-center gap-4 text-center">
+                  <a href="https://gandhibhavan.org/" target="_blank"
+                    class="text-primary-color/60 hover:text-primary-color">Gandhibhavan</a>
+                  <a href="https://datavalley.in/" target="_blank"
+                    class="text-primary-color/60 hover:text-primary-color">Datavalley</a>
+                  <a href="https://carollia.com/" target="_blank"
+                    class="text-primary-color/60 hover:text-primary-color">Carollia</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-5">
+            <div class="scroll-revealed relative z-10 mx-auto max-w-[845px]">
+              <figure class="mt-16">
+                <img src="./assets/img/hero.jpg" alt="Hero image"
+                  class="mx-auto max-w-[280px] rounded-t-xl rounded-tr-xl" />
+              </figure>
+
+              <div class="absolute -left-9 bottom-0 z-[-1]">
+                <img src="./assets/img/dots.svg" alt class="w-[120px] opacity-75" />
+              </div>
+
+              <div class="absolute -right-6 -top-6 z-[-1]">
+                <img src="./assets/img/dots.svg" alt class="w-[120px] opacity-75" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section-area">
+      <div class="container">
+        <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+          <!-- Image -->
+          <div class="w-full">
+            <figure class="scroll-revealed max-w-[480px] mx-auto">
+              <img src="./assets/img/about-img.jpg" alt="About Xavirign" class="rounded-xl" />
+            </figure>
+          </div>
+
+          <!-- Content -->
+          <div class="w-full">
+            <div class="scroll-revealed">
+              <h6 class="mb-2 block text-lg font-semibold text-primary">
+                About Us
+              </h6>
+              <h2 class="mb-6">
+                Transforming Ideas into Impactful Digital Experiences
+              </h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs scroll-revealed">
+              <nav class="tabs-nav flex flex-wrap gap-4 my-8" role="tablist" aria-label="About us tabs">
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-profile" id="tabs-list-profile" role="tab"
+                  aria-controls="tabs-panel-profile">
+                  Our Profile
+                </button>
+
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-vision" id="tabs-list-vision" role="tab"
+                  aria-controls="tabs-panel-vision">
+                  Our Vision
+                </button>
+
+                <button type="button"
+                  class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+                  data-web-toggle="tabs" data-web-target="tabs-panel-history" id="tabs-list-history" role="tab"
+                  aria-controls="tabs-panel-history">
+                  Our History
+                </button>
+              </nav>
+
+              <!-- Tab Contents -->
+              <div class="tabs-content mt-4" id="tabs-panel-profile" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-profile">
+                <p>
+                  Xavirign is a forward-thinking technology company that empowers small businesses, students, and
+                  underserved communities through AI-driven software, automation, and cloud solutions.
+                </p>
+                <p>
+                  Our expert team specializes in building intelligent digital platforms that simplify complex processes,
+                  increase productivity, and create opportunities for meaningful growth.
+                </p>
+              </div>
+
+              <div class="tabs-content mt-4" id="tabs-panel-vision" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-vision">
+                <p>
+                  Our vision is to democratize technology by delivering AI-powered solutions that transform lives,
+                  improve accessibility, and foster learning and innovation for all.
+                </p>
+                <p>
+                  We aim to create digital tools that bridge gaps, enable growth, and help individuals and organizations
+                  achieve their fullest potential.
+                </p>
+              </div>
+
+              <div class="tabs-content mt-4" id="tabs-panel-history" tabindex="-1" role="tabpanel"
+                aria-labelledby="tabs-list-history">
+                <p>
+                  Founded with a mission to make technology meaningful, Xavirign has continuously innovated to provide
+                  scalable, secure, and impactful solutions across diverse sectors.
+                </p>
+                <p>
+                  Over the years, we have partnered with clients from startups to established organizations, delivering
+                  custom mobile apps, web platforms, AI integrations, and ERP solutions that drive real-world results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Services
+          </h6>
+          <h2 class="mb-6">Our Best Services</h2>
+          <p>
+            We deliver innovative digital solutions that empower businesses and communities, combining cutting-edge
+            technology with intelligent design and scalable platforms.
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Mobile App Development -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-mobile"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Mobile App Development
+                </h4>
+                <p>
+                  Custom mobile applications that enhance user engagement, streamline business processes, and deliver
+                  seamless performance across platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-display"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Web Development
+                </h4>
+                <p>
+                  Responsive, dynamic websites built with modern frameworks to showcase your brand, attract customers,
+                  and optimize business workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ERP Solutions -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-database"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  ERP Solutions
+                </h4>
+                <p>
+                  Integrated enterprise systems that optimize business operations, improve efficiency, and provide
+                  real-time insights for smarter decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Integration -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-bulb"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  AI Integration
+                </h4>
+                <p>
+                  Intelligent AI solutions that enhance your platforms with advanced automation, predictive analytics,
+                  and machine learning capabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chatbot Development -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-inbox"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Chatbot Development
+                </h4>
+                <p>
+                  Smart conversational interfaces designed to improve customer support, drive engagement, and automate
+                  interactions efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Solutions -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div
+                class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-cog"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                  Custom Solutions
+                </h4>
+                <p>
+                  Tailor-made software and digital platforms built to match your unique business requirements, fully
+                  scalable and maintainable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro video section -->
+    <section id="intro" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Discover Xavirign
+          </h6>
+          <h2 class="mb-6">Watch Our Company Intro Video</h2>
+          <p>
+            Get an inside look at how Xavirign transforms digital challenges into innovative solutions through
+            cutting-edge technology and expert collaboration.
+          </p>
+        </div>
+
+        <div class="scroll-revealed relative max-w-[900px] mx-auto">
+          <img src="./assets/img/intro-video.jpg" alt="Intro video"
+            class="w-full h-full aspect-video rounded-xl object-cover" />
+          <a href="javascript:void(0)"
+            class="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center bg-primary text-primary-color text-[1.875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl focus:bg-primary-color focus:text-primary focus:shadow-xl">
+            <i class="lni lni-play"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Our Projects
+          </h6>
+          <h2 class="mb-6">Explore Our Work</h2>
+          <p>
+            Discover how we've helped clients innovate with cutting-edge technology solutions.
+          </p>
+        </div>
+
+        <nav class="scroll-revealed portfolio-menu mb-[3.750rem] text-center" aria-label="Portfolio filter">
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color active"
+            data-filter="*">
+            All Projects
+          </button>
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+            data-filter="web">
+            Web Development
+          </button>
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+            data-filter="mobile">
+            Mobile Apps
+          </button>
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+            data-filter="erp">
+            ERP Solutions
+          </button>
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+            data-filter="ai">
+            AI Integration
+          </button>
+          <button type="button"
+            class="font-semibold px-5 py-2 rounded-md text-body-light-11 dark:text-body-dark-11 hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color"
+            data-filter="chatbot">
+            Chatbots
+          </button>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="py-12">
-            <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0 px-2">
-                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Who we are</span>
-                    <h1 class="font-unbounded text-4xl md:text-6xl font-bold mt-4 leading-tight">Digital Innovation at
-                        the Speed of Imagination</h1>
-                    <p class="text-lg mt-4 text-gray-300">We are a forward-thinking technology partner dedicated to
-                        transforming complex business challenges into seamless digital experiences. Our team of expert
-                        developers and strategists crafts innovative solutions that drive meaningful results.</p>
-                    <div class="mt-6 flex space-x-4">
-                        <button class="text-[#09060B] px-6 py-3 rounded-lg ">OUR CLIENTS</button>
-
-                    </div>
-                    <div class="mt-8 flex space-x-6">
-                        <a href="https://gandhibhavan.org" target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/gandhibhavan.png" alt="gandhibhavan.org" class="h-12">
-                        </a>
-                        <a href="https://datavalley.in" target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/datavalley.png" alt="datavalley.in" class="h-12">
-                        </a>
-                        <a href="https://carollia.com" target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/Carollia Lifestyle.webp" alt="carollia.com" class="h-12">
-                        </a>
-                    </div>
-
-                </div>
-                <div class="md:w-1/2">
-                    <img src="/assets/group-people-working-team.jpg" alt="Team collaboration" class="w-full rounded-lg">
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Tech Stack Section -->
-        <section class="py-14 bg-[#09060B]">
-            <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our Tech Stack</span>
-                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4 text-white">
-                        Powering Innovation with Modern Technologies
-                    </h2>
-                    <p class="text-lg mt-4 text-gray-300 max-w-2xl mx-auto">
-                        We leverage cutting-edge frameworks and tools to build scalable, secure, and future-ready
-                        digital solutions.
-                    </p>
-                </div>
-
-                <!-- Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    <!-- Flutter -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/flutter.png" alt="Flutter" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">Flutter</h3>
-                        <p class="text-gray-300 mt-2">Cross-platform mobile apps with native performance and expressive
-                            UIs.</p>
-                    </div>
-
-                    <!-- Node.js -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/Node.js_logo.svg" alt="Node.js" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">Node.js</h3>
-                        <p class="text-gray-300 mt-2">High-performance backend services and APIs with JavaScript
-                            runtime.</p>
-                    </div>
-
-                    <!-- Laravel -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/Laravel.png" alt="Laravel" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">Laravel</h3>
-                        <p class="text-gray-300 mt-2">Elegant PHP framework for robust and scalable web applications.
-                        </p>
-                    </div>
-
-                    <!-- React -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/React-icon.png" alt="React" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">React</h3>
-                        <p class="text-gray-300 mt-2">Dynamic and responsive frontends with component-based
-                            architecture.</p>
-                    </div>
-
-                    <!-- Django -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/django-logo-negative.png" alt="Django" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">Django</h3>
-                        <p class="text-gray-300 mt-2">Secure and scalable Python framework for rapid web development.
-                        </p>
-                    </div>
-
-                    <!-- Odoo -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg text-center">
-                        <img src="/assets/Odoo_logo_rgb.svg.png" alt="Odoo" class="h-16 mx-auto mb-4">
-                        <h3 class="font-unbounded text-xl font-bold text-white">Odoo</h3>
-                        <p class="text-gray-300 mt-2">All-in-one ERP solution to streamline and automate business
-                            processes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Expertise Section -->
-        <section class="py-14">
-            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our expertise</span>
-                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">Comprehensive Digital Solutions</h2>
-                    <p class="text-lg mt-4 text-gray-300">Tailored technology services for modern businesses</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Mobile -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg">
-                        <img src="/assets/app-dev.jpg" alt="Web icon" class="h-150 mb-4">
-                        <h3 class="font-unbounded text-2xl font-bold mt-4">Mobile Application Development</h3>
-                        <p class="text-lg mt-4 text-gray-300">
-                            Custom mobile apps designed to enhance user engagement and streamline business processes.
-                        </p>
-                        <div class="mt-6 flex space-x-4">
-                            <button class="text-[#09060B] px-6 py-3 rounded-lg">Explore</button>
-                            <button
-                                class="flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:text-[#09060B]">
-                                <span>Learn more</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Web -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg">
-                        <img src="/assets/web-app.jpg" alt="Web icon" class="h-150 mb-4">
-                        <h3 class="font-unbounded text-xl font-bold">Web Development</h3>
-                        <p class="text-lg text-gray-300">
-                            Responsive and dynamic websites that capture your brand's unique digital identity.
-                        </p>
-                        <button
-                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
-                            <span>Learn more</span>
-                        </button>
-                    </div>
-
-                    <!-- ERP -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg">
-                        <img src="/assets/7046464.jpg" alt="ERP icon" class="h-150 mb-4">
-                        <h3 class="font-unbounded text-xl font-bold">ERP Solutions</h3>
-                        <p class="text-lg text-gray-300">
-                            Integrated enterprise resource planning systems to optimize your business operations.
-                        </p>
-                        <button
-                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
-                            <span>Learn more</span>
-                        </button>
-                    </div>
-
-                    <!-- AI -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg">
-                        <img src="/assets/852.jpg" alt="AI icon" class="h-150 mb-4">
-                        <h3 class="font-unbounded text-xl font-bold">AI Integration</h3>
-                        <p class="text-lg text-gray-300">
-                            Intelligent AI solutions that transform your digital platforms with advanced machine
-                            learning capabilities.
-                        </p>
-                        <button
-                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
-                            <span>Learn more</span>
-                        </button>
-                    </div>
-
-                    <!-- Chatbot -->
-                    <div class="bg-[#2D2A32] p-6 rounded-lg">
-                        <img src="/assets/chat-bot.jpg" alt="Chatbot icon" class="h-85 mb-4">
-                        <h3 class="font-unbounded text-xl font-bold">Chatbot Development</h3>
-                        <p class="text-lg text-gray-300">
-                            Smart conversational interfaces that enhance customer interaction and support.
-                        </p>
-                        <button
-                            class="mt-4 flex items-center space-x-2 border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#09060B]">
-                            <span>Learn more</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- Header Section -->
-        <section class="bg-[#2D2A32] py-14 px-14">
-            <div class=" mx-auto px-8 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-unbounded text-2xl md:text-6xl font-bold">Transforming Digital Landscapes with
-                    Innovative Technology</h2>
-                <p class="text-lg mt-4 text-gray-300 max-w-3xl mx-auto text-2xl">Xavirign delivers cutting-edge digital
-                    solutions
-                    that empower businesses to thrive in the modern technological ecosystem.</p>
-                <div class="mt-6 flex justify-center space-x-4">
-                    <button class="bg-[#3F0081] text-white px-6 py-3 rounded-lg hover:text-[#3F0081]">
-                        Explore
-                    </button>
-
-                    <button
-                        class="border border-white text-white px-6 py-3 rounded-lg  hover:text-[#3F0081]">Contact</button>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Section -->
-        <section class="py-14 bg-[#2D2A32]">
-            <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Our Customers</span>
-                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">What Our Clients Say</h2>
-                    <p class="text-lg mt-4 text-gray-300 max-w-3xl mx-auto">
-                        Hear directly from our partners and clients about their experience working with us.
-                    </p>
-                </div>
-
-                <!-- Testimonials Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
-                        <p class="text-gray-300 text-lg italic">
-                            "The mobile app they built for us transformed how we connect with our customers.
-                            Reliable, scalable, and beautifully designed."
-                        </p>
-                        <div class="mt-6 flex items-center space-x-4">
-                            <img src="/assets/person1.png" alt="Client 1" class="w-16 h-16 rounded-full object-cover">
-                            <div>
-                                <h4 class="font-bold text-white">John Mathews</h4>
-                                <span class="text-sm text-gray-400">CEO, TechNova</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
-                        <p class="text-gray-300 text-lg italic">
-                            "Professional team, clear communication, and the ERP solution exceeded our expectations.
-                            Highly recommend their services."
-                        </p>
-                        <div class="mt-6 flex items-center space-x-4">
-                            <img src="/assets/person3.png" alt="Client 2" class="w-16 h-16 rounded-full object-cover">
-                            <div>
-                                <h4 class="font-bold text-white">Anita George</h4>
-                                <span class="text-sm text-gray-400">COO, GreenLeaf Enterprises</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-[#1F1D23] p-6 rounded-lg shadow-lg">
-                        <p class="text-gray-300 text-lg italic">
-                            "Their chatbot integration reduced our customer support load by 40%.
-                            The results speak for themselves."
-                        </p>
-                        <div class="mt-6 flex items-center space-x-4">
-                            <img src="/assets/person2.jpg" alt="Client 3" class="w-16 h-16 rounded-full object-cover">
-                            <div>
-                                <h4 class="font-bold text-white">Ravi Kumar</h4>
-                                <span class="text-sm text-gray-400">Head of Operations, BrightMart</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Contact Section -->
-        <section class="py-14">
-            <div class=" mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <span class="text-sm font-semibold uppercase text-[#AA81F5]">Connect</span>
-                    <h2 class="font-unbounded text-3xl md:text-5xl font-bold mt-4">Contact Us</h2>
-                    <p class="text-lg mt-4 text-gray-300">Ready to transform your digital strategy? Let's discuss how we
-                        can help your business innovate.</p>
-                    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="flex items-center space-x-4">
-                            <i class="material-icons h-6 w-6">contact_mail</i>
-                            <div>
-                                <h4 class="font-unbounded text-lg font-bold">Email</h4>
-                                <a href="mailto:hello@xavirign.com" class="text-[#AA81F5]">hello@xavirign.com</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <i class="material-icons h-6 w-6">contact_phone</i>
-                            <div>
-                                <h4 class="font-unbounded text-lg font-bold">Phone</h4>
-                                <a href="tel:+15551234567" class="text-[#AA81F5]">+1 (555) 123-4567</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <i class="material-icons">location_city</i>
-                            <div>
-                                <h4 class="font-unbounded text-lg font-bold">Office</h4>
-                                <p class="text-gray-300">Kompara, Nad P.O., Kerala – 683563, India</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="/assets/location.png" alt="Contact image" class="w-full rounded-lg">
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-[#09060B] py-12">
-            <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                       
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-unbounded text-lg font-bold">Address</h4>
-                                <p class="text-gray-300">Kompara, Nad P.O., Kerala – 683563, India</p>
-                            </div>
-                            <div>
-                                <h4 class="font-unbounded text-lg font-bold">Contact</h4>
-                                <p class="text-gray-300">+91 7012545907</p>
-                                <a href="mailto:info@xavirign.com" class="text-[#AA81F5]">savioalwd@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="flex space-x-4 mt-6">
-                            <a href="#"><img src="/assets/icons/facebook.png" alt="Facebook" class="h-6 w-6"></a>
-                            <a href="#"><img src="/assets/icons/instagram.png" alt="Instagram" class="h-6 w-6"></a>
-                            <a href="#"><img src="/assets/icons/github.png" alt="X" class="h-6 w-6"></a>
-
-                        </div>
-                    </div>
-                    <div class="flex justify-between md:col-span-2">
-                        <div class="space-y-2">
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Services</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Case studies</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">About us</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Careers</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Blog</a>
-                        </div>
-                        <div class="space-y-2">
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Resources</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Community</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Partners</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Events</a>
-                            <a href="#" class="block text-lg hover:text-[#AA81F5]">Support</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="scroll-revealed portfolio-grid row">
+          <!-- Web Development Projects -->
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="web">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/web-app.jpg" alt="Responsive Web Application"
+                  class="w-full h-full object-cover" />
                 <div
-                    class="mt-12 border-t border-[#21201D] pt-6 flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-300">© 2025 Xavirign. All rights reserved.</p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Privacy policy</a>
-                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Terms of service</a>
-                        <a href="#" class="text-gray-300 hover:text-[#AA81F5]">Cookie settings</a>
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/web-app.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
                     </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-web-project.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">E-Commerce Platform</a>
+                </h4>
+                <p>Full-stack web application built with React and Node.js for seamless online shopping.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="web">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/7046464.jpg" alt="Dashboard Application" class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/7046464.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-dashboard.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Analytics Dashboard</a>
+                </h4>
+                <p>Interactive data visualization platform using Django and modern charting libraries.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Mobile App Projects -->
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="mobile">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/4400847.jpg" alt="Cross-Platform Mobile App"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/4400847.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-mobile-app.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Fitness Tracker App</a>
+                </h4>
+                <p>Cross-platform mobile application developed with Flutter for health monitoring.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="mobile">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/app-dev.jpg" alt="Delivery Service App" class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/app-dev.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-delivery-app.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Delivery Service App</a>
+                </h4>
+                <p>Real-time tracking application for logistics with push notifications and GPS integration.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- ERP Solutions -->
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="erp">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/Odoo_logo_rgb.svg.png" alt="Enterprise Resource Planning System"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/Odoo_logo_rgb.svg.png"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-erp-system.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Inventory Management
+                    ERP</a>
+                </h4>
+                <p>Odoo-based ERP solution for streamlined inventory and supply chain operations.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="erp">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/hero.jpg" alt="HR Management System" class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/hero.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-hr-erp.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">HR Management System</a>
+                </h4>
+                <p>Comprehensive employee management solution integrated with Laravel backend.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- AI Integration Projects -->
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="ai">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/ai-human.jpg" alt="AI Recommendation Engine"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/ai-human.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-ai-recommendation.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">AI Recommendation
+                    Engine</a>
+                </h4>
+                <p>Machine learning-based product recommendation system for e-commerce platforms.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="ai">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/852.jpg" alt="Predictive Analytics Tool" class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/852.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-predictive-ai.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Predictive Analytics
+                    Tool</a>
+                </h4>
+                <p>Advanced forecasting system using Python and machine learning algorithms.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Chatbot Projects -->
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="chatbot">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/chat-bot.jpg" alt="Customer Service Chatbot"
+                  class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/chat-bot.jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-customer-chatbot.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Customer Service
+                    Chatbot</a>
+                </h4>
+                <p>AI-powered conversational interface for 24/7 customer support automation.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="chatbot">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="./assets/img/6884192(1).jpg" alt="Sales Assistant Bot" class="w-full h-full object-cover" />
+                <div
+                  class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="./assets/img/6884192(1).jpg"
+                        class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="https://example-sales-bot.com" target="_blank"
+                        class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2">
+                  <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Sales Assistant Bot</a>
+                </h4>
+                <p>Lead generation chatbot integrated with CRM systems for enhanced sales processes.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pricing section -->
+    <section id="pricing" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Plans & Services
+          </h6>
+          <h2 class="mb-6">Our Offerings</h2>
+          <p>
+            We provide tailored AI-integrated solutions and application development services. Pricing is customized for
+            each project based on your requirements.
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Starter Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div
+              class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg">
+              <h6
+                class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title">
+                Starter
+              </h6>
+              <p>
+                Ideal for startups and small projects. Access AI-powered tools and basic application integration.
+              </p>
+              <div class="pt-8 pb-10">
+                <a href="javascript:void(0)"
+                  class="inline-block font-medium px-6 py-3 rounded-md bg-primary/10 text-primary hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color">
+                  Contact Us for Quote
+                </a>
+              </div>
+              <ul class="text-left">
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Basic AI modules</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Single mobile/web app
+                  integration</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Standard support</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Limited analytics</li>
+              </ul>
             </div>
-        </footer>
+          </div>
+
+          <!-- Exclusive Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-lg">
+              <h6
+                class="inline-block font-medium text-base mb-6 text-primary-color bg-primary rounded-md py-2 px-8 pricing-title">
+                Exclusive
+              </h6>
+              <p>
+                For growing businesses seeking advanced AI solutions and analytics.
+              </p>
+              <div class="pt-8 pb-10">
+                <a href="javascript:void(0)"
+                  class="inline-block font-medium px-6 py-3 rounded-md bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 hover:text-primary-color focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 focus:text-primary-color">
+                  Contact Us for Quote
+                </a>
+              </div>
+              <ul class="text-left">
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> All Starter features
+                </li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Multi-platform AI app
+                  integration</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Advanced analytics &
+                  reporting</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Priority support</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div
+              class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg">
+              <h6
+                class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title">
+                Premium
+              </h6>
+              <p>
+                Tailored for enterprises requiring full-scale AI-powered application development and customization.
+              </p>
+              <div class="pt-8 pb-10">
+                <a href="javascript:void(0)"
+                  class="inline-block font-medium px-6 py-3 rounded-md bg-primary/10 text-primary hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color">
+                  Contact Us for Quote
+                </a>
+              </div>
+              <ul class="text-left">
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> All Exclusive features
+                </li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Custom AI model
+                  deployment</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Unlimited applications &
+                  integrations</li>
+                <li class="mb-3 inline-flex gap-3 w-full"><i
+                    class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i> Dedicated support &
+                  consultancy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call-action" class="section-area !bg-primary !text-primary-color">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto">
+          <h2 class="mb-8 text-inherit">
+            Transform Your Business with AI-Powered Solutions
+          </h2>
+          <p>
+            At Xavigin, we craft tailor-made AI integrations and applications to help your business stay ahead. From
+            innovative solutions to seamless digital experiences, we design technology that drives growth and
+            efficiency.
+          </p>
+          <a href="javascript:void(0)"
+            class="inline-block px-5 py-3 rounded-md mt-11 bg-green-400 text-white hover:bg-green-500 hover:text-white focus:bg-green-500 focus:text-white"
+            role="button">
+            Get Your Custom Solution
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">Tech Stack</h6>
+          <h2 class="mb-6">Our Technologies</h2>
+          <p>
+            We leverage modern technologies and AI frameworks to deliver scalable, secure, and high-performing
+            applications tailored to your business needs.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/React-icon.png" alt="Python & AI" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">React & React Native
+                </h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Websites & AI integrations</p>
+              </figcaption>
+            </figure>
+          </div>
+          <!-- Flutter -->
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/flutter.png" alt="Flutter" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">Flutter</h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Cross-platform mobile & web apps</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Laravel -->
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/Laravel.png" alt="Laravel" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">Laravel</h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Backend APIs & web applications</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Node.js -->
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/Node.js_logo.svg" alt="Node.js" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">Node.js</h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Scalable server-side applications</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/Dart_logo.png" alt="Node.js" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">Dart & GO</h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Scalable Bussiness applications</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Python/AI -->
+          <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+            <figure
+              class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1">
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img src="./assets/img/Odoo_logo_rgb.svg.png" alt="Python & AI" class="h-full w-full object-contain" />
+              </div>
+              <figcaption class="text-center block">
+                <h4 class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12">Python & AI</h4>
+                <p class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11">Machine learning & AI integrations</p>
+              </figcaption>
+            </figure>
+          </div>
+
+
+
+          <!-- Add more tech stack items here as needed -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Testimonials section -->
+    <!-- Testimonials section -->
+    <section id="testimonials" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            What Our Clients Say
+          </h6>
+          <h2 class="mb-6">Trusted by Innovators Worldwide</h2>
+          <p>
+            From startups to enterprises, we help businesses transform with
+            AI-powered applications and intelligent digital solutions. Here’s
+            what some of our clients say about working with Xavigin.
+          </p>
+        </div>
+
+        <div class="swiper testimonial-carousel common-carousel scroll-revealed">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8">
+                <p class="mb-6 text-base text-body-light-11 dark:text-body-dark-11">
+                  "Xavigin helped us integrate AI into our workflow seamlessly.
+                  Their team understood our vision and delivered beyond
+                  expectations."
+                </p>
+                <figure class="flex items-center gap-4">
+                  <div class="h-[50px] w-[50px] overflow-hidden">
+                    <img src="./assets/img/person1.png" alt="Testimonial picture"
+                      class="h-full w-full rounded-full object-cover" />
+                  </div>
+                  <figcaption class="flex-grow">
+                    <h3 class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11">
+                      Rahul Ms
+                    </h3>
+                    <p class="text-xs text-body-light-10 dark:text-body-dark-10">
+                      Tech Entrepreneur
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8">
+                <p class="mb-6 text-base text-body-light-11 dark:text-body-dark-11">
+                  "Their AI-driven app development cut our costs and improved
+                  efficiency. The Xavigin team is reliable and innovative."
+                </p>
+                <figure class="flex items-center gap-4">
+                  <div class="h-[50px] w-[50px] overflow-hidden">
+                    <img src="./assets/img/person4.jpg" alt="Testimonial picture"
+                      class="h-full w-full rounded-full object-cover" />
+                  </div>
+                  <figcaption class="flex-grow">
+                    <h3 class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11">
+                      Sebastian P
+                    </h3>
+                    <p class="text-xs text-body-light-10 dark:text-body-dark-10">
+                      CTO, SaaS Startup
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8">
+                <p class="mb-6 text-base text-body-light-11 dark:text-body-dark-11">
+                  "Working with Xavigin was a turning point. Their design and AI
+                  integration gave our users a frictionless experience."
+                </p>
+                <figure class="flex items-center gap-4">
+                  <div class="h-[50px] w-[50px] overflow-hidden">
+                    <img src="./assets/img/person3.png" alt="Testimonial picture"
+                      class="h-full w-full rounded-full object-cover" />
+                  </div>
+                  <figcaption class="flex-grow">
+                    <h3 class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11">
+                      Anna Mariyam
+                    </h3>
+                    <p class="text-xs text-body-light-10 dark:text-body-dark-10">
+                      Product Designer
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8">
+                <p class="mb-6 text-base text-body-light-11 dark:text-body-dark-11">
+                  "The collaboration was smooth, transparent, and fast. We now
+                  have an AI-powered platform that scales effortlessly."
+                </p>
+                <figure class="flex items-center gap-4">
+                  <div class="h-[50px] w-[50px] overflow-hidden">
+                    <img src="./assets/img/person2.jpg" alt="Testimonial picture"
+                      class="h-full w-full rounded-full object-cover" />
+                  </div>
+                  <figcaption class="flex-grow">
+                    <h3 class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11">
+                      Emanuel George
+                    </h3>
+                    <p class="text-xs text-body-light-10 dark:text-body-dark-10">
+                      Founder, E-Commerce Brand
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <div class="mt-[60px] flex items-center justify-center gap-1">
+            <div class="swiper-button-prev">
+              <i class="lni lni-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="lni lni-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq" class="section-area relative">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">FAQ</h6>
+          <h2 class="mb-6">Frequently Asked Questions</h2>
+          <p>
+            Got questions about AI-powered solutions and application development?
+            Here are some of the most common things businesses ask us before starting a project.
+          </p>
+        </div>
+
+        <div class="grid gap-x-8 gap-y-12 grid-cols-1 lg:grid-cols-2">
+
+          <!-- Q1 -->
+          <div class="scroll-revealed flex">
+            <div
+              class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]">
+              <i class="lni lni-question-circle"></i>
+            </div>
+            <div class="w-full">
+              <h3
+                class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl">
+                What kind of AI solutions does Xavigin provide?
+              </h3>
+              <p class="text-body-light-11 dark:text-body-dark-11">
+                We build and integrate AI into web, mobile, and enterprise
+                applications — from predictive analytics and chatbots to
+                recommendation systems and workflow automation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="scroll-revealed flex">
+            <div
+              class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]">
+              <i class="lni lni-question-circle"></i>
+            </div>
+            <div class="w-full">
+              <h3
+                class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl">
+                Do you only work with large enterprises?
+              </h3>
+              <p class="text-body-light-11 dark:text-body-dark-11">
+                Not at all. We partner with startups, SMEs, and enterprises alike.
+                Our solutions are scalable, so we can start small and grow with your business.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="scroll-revealed flex">
+            <div
+              class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]">
+              <i class="lni lni-question-circle"></i>
+            </div>
+            <div class="w-full">
+              <h3
+                class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl">
+                How long does it take to build an AI-integrated application?
+              </h3>
+              <p class="text-body-light-11 dark:text-body-dark-11">
+                Timelines vary by project scope. A simple AI integration may take
+                a few weeks, while complex enterprise platforms can take several
+                months. We provide clear roadmaps before development begins.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="scroll-revealed flex">
+            <div
+              class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-primary-color text-[28px] sm:mr-6 sm:h-[60px] sm:max-w-[60px] sm:text-[32px]">
+              <i class="lni lni-question-circle"></i>
+            </div>
+            <div class="w-full">
+              <h3
+                class="mb-6 text-xl font-semibold text-body-light-12 dark:text-body-dark-12 sm:text-2xl lg:text-xl xl:text-2xl">
+                Can you integrate AI into our existing systems?
+              </h3>
+              <p class="text-body-light-11 dark:text-body-dark-11">
+                Yes. We specialize in integrating AI into existing applications,
+                CRMs, and ERPs without disrupting current workflows, ensuring a
+                smooth transition.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <span class="absolute left-5 top-5 -z-[1]">
+          <svg class="w-20 h-auto fill-teal-500" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1280.000000pt"
+            height="1280.000000pt" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M550 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 12465 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z" />
+              <path d="M3110 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M12070 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M550 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 11185 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z" />
+              <path d="M3110 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M12070 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M550 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+            </g>
+          </svg>
+        </span>
+        <span class="absolute right-5 bottom-5 -z-[1]">
+          <svg class="w-20 h-auto fill-indigo-500" version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="1280.000000pt" height="1280.000000pt" viewBox="0 0 1280.000000 1280.000000"
+            preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+              <path d="M550 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 12465 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z" />
+              <path d="M3110 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 12465 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M12070 12465 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M550 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 11185 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 254
+-255 194 -41 395 142 375 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217
+16z" />
+              <path d="M3110 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 11185 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M12070 11185 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142
+-319 107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M550 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 9905 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 8625 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 7345 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 6065 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 4785 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 4785 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 4785 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 3505 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 3505 c-151 -50 -253 -216 -222 -362 25 -119 136 -230 255 -255
+193 -41 394 142 374 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 3505 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M4390 2225 c-105 -35 -200 -141 -222 -248 -25 -117 32 -244 142 -319
+107 -74 229 -75 337 -3 177 118 201 338 53 485 -85 86 -207 119 -310 85z" />
+              <path d="M5670 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 2225 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M550 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M1830 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M3110 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M4390 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M5670 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M6950 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M8230 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M9510 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369 -369
+155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M10790 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+              <path d="M12070 945 c-105 -35 -200 -141 -222 -248 -43 -206 163 -412 369
+-369 155 32 275 190 260 339 -11 105 -90 213 -190 262 -61 29 -155 36 -217 16z" />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section id="blog" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">Blog</h6>
+          <h2 class="mb-6">Insights & Updates</h2>
+          <p>
+            Stay updated with the latest trends in AI, app development, and
+            emerging technologies that shape the digital future.
+          </p>
+        </div>
+
+        <div class="row">
+          <!-- Blog 1 -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <article class="group">
+              <div class="relative">
+                <a href="javascript:void(0)" class="w-full aspect-[3/2] rounded-xl overflow-hidden block">
+                  <img src="./assets/img/ai-human.jpg" alt="AI Innovation"
+                    class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]" />
+                </a>
+              </div>
+              <span class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10">
+                Xavigin Team - 12 Sep 2025
+              </span>
+              <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                <a href="javascript:void(0)" class="text-body-light-12 dark:text-body-dark-12">
+                  How AI is Reshaping Modern Application Development
+                </a>
+              </h4>
+              <p>
+                From predictive analytics to intelligent automation, discover
+                how AI is revolutionizing the way businesses build and scale apps.
+              </p>
+            </article>
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <article class="group">
+              <div class="relative">
+                <a href="javascript:void(0)" class="w-full aspect-[3/2] rounded-xl overflow-hidden block">
+                  <img src="./assets/img/web-app.jpg" alt="Cloud AI"
+                    class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]" />
+                </a>
+              </div>
+              <span class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10">
+                Xavigin Team - 05 Sep 2025
+              </span>
+              <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                <a href="javascript:void(0)" class="text-body-light-12 dark:text-body-dark-12">
+                  Building Scalable AI Solutions in the Cloud
+                </a>
+              </h4>
+              <p>
+                Learn the strategies we use to integrate AI into cloud-native
+                platforms for better scalability, flexibility, and security.
+              </p>
+            </article>
+          </div>
+
+          <!-- Blog 3 -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <article class="group">
+              <div class="relative">
+                <a href="javascript:void(0)" class="w-full aspect-[3/2] rounded-xl overflow-hidden block">
+                  <img src="./assets/img/852.jpg" alt="Startup Growth with AI"
+                    class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]" />
+                </a>
+              </div>
+              <span class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10">
+                Xavigin Team - 28 Aug 2025
+              </span>
+              <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                <a href="javascript:void(0)" class="text-body-light-12 dark:text-body-dark-12">
+                  5 AI Strategies to Boost Startup Growth
+                </a>
+              </h4>
+              <p>
+                Practical ways startups can leverage AI-driven tools to
+                improve user retention, automate workflows, and accelerate growth.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients section -->
+    <section id="clients" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">
+            Clients
+          </h6>
+          <h2 class="mb-6">Our Awesome Clients</h2>
+          <p>
+            We are proud to collaborate with leading organizations and brands that trust our expertise.
+          </p>
+        </div>
+
+        <div class="">
+          <div class="row justify-center">
+            <div class="scroll-revealed text-center p-4 col-12 sm:col-6 md:col-4">
+              <img src="./assets/img/Carollia Lifestyle.webp" alt="Datavalley Logo"
+                class="h-[40px] inline-block grayscale dark:invert hover:grayscale-0 hover:invert-0" />
+            </div>
+            <div class="scroll-revealed text-center p-4 col-12 sm:col-6 md:col-4">
+              <img src="./assets/img/datavalley.png" alt="Gandhibhavan Logo"
+                class="h-[40px] inline-block grayscale dark:invert hover:grayscale-0 hover:invert-0" />
+            </div>
+            <div class="scroll-revealed text-center p-4 col-12 sm:col-6 md:col-4">
+              <img src="./assets/img/gandhibhavan.png" alt="Carollia Logo"
+                class="h-[40px] inline-block grayscale dark:invert hover:grayscale-0 hover:invert-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section-area">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-12 xl:col-4">
+            <div class="row">
+              <!-- Phone & Email -->
+              <div class="col-12 md:col-6 xl:col-12">
+                <div
+                  class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div>
+                    <i
+                      class="lni lni-phone w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Contact</h4>
+                    <p class="m-0">+91 70125 45907</p>
+                    <p class="m-0">contact@xavirgin.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="col-12 md:col-6 xl:col-12">
+                <div
+                  class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div>
+                    <i
+                      class="lni lni-map-marker w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Address</h4>
+                    <p class="m-0">Aluva</p>
+                    <p class="m-0">Kochi, Kerala</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule -->
+              <div class="col-12 md:col-6 xl:col-12">
+                <div
+                  class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div>
+                    <i
+                      class="lni lni-alarm-clock w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Schedule</h4>
+                    <p class="m-0">24 Hours / 7 Days Open</p>
+                    <p class="m-0">Office time: 10:00 AM - 5:30 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-12 xl:col-8">
+            <div
+              class="scroll-revealed bg-body-light-1 dark:bg-primary-dark-2 rounded-xl py-8 sm:py-12 px-6 sm:px-10 z-10 relative shadow-card-1 hover:shadow-lg">
+              <div class="text-center max-w-[550px] mx-auto mb-12">
+                <h6 class="mb-2 block text-lg font-semibold text-primary">
+                  Get in Touch
+                </h6>
+                <h2 class="mb-3">Ready to Get Started</h2>
+                <p>
+                  Feel free to reach out to us anytime — we’d love to hear from you!
+                </p>
+              </div>
+
+              <form action="#" method="POST" class="flex flex-col gap-6">
+                <div class="row">
+                  <div class="col-12 md:col-6">
+                    <input type="text" name="name"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Name" required />
+                  </div>
+
+                  <div class="col-12 md:col-6">
+                    <input type="email" name="email"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Email" required />
+                  </div>
+
+                  <div class="col-12 md:col-6">
+                    <input type="text" name="phone"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Phone" required />
+                  </div>
+
+                  <div class="col-12 md:col-6">
+                    <input type="text" name="subject"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Subject" required />
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="5"
+                      class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                      placeholder="Type your message" required></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="w-full text-center">
+                      <button type="submit"
+                        class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map section -->
+    <section id="map" class="w-full h-[500px] overflow-hidden -mt-[12rem]">
+      <object
+        data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.0094028113572!2d98.67188956289421!3d3.583155328672593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc1c3eb2fd%3A0x23d431c8a6908262!2sMedan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1723787393945!5m2!1sid!2sid"
+        class="border-0 w-full h-full"></object>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark-2 text-white">
+    <div class="container py-20 lg:py-[100px]">
+      <div class="row">
+        <div class="col-12 order-first lg:col-4">
+          <div class="w-full">
+            <a href="." class="inline-block mb-5 text-3xl font-bold text-inherit">
+              xavirgin.com
+            </a>
+
+
+            <p class="mb-8 text-body-dark-11">
+              We craft AI-powered solutions and digital experiences that help brands and businesses innovate, scale, and
+              stay future-ready.
+            </p>
+
+            <div class="-mx-3 flex items-center">
+              <a href="javascript:void(0)" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                <i class="lni lni-facebook-fill"></i>
+              </a>
+
+              <a href="javascript:void(0)" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                <i class="lni lni-twitter-original"></i>
+              </a>
+
+              <a href="javascript:void(0)" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                <i class="lni lni-instagram-original"></i>
+              </a>
+
+              <a href="javascript:void(0)" class="px-3 text-body-dark-11 hover:text-primary text-[22px] leading-none">
+                <i class="lni lni-linkedin-original"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 lg:col-2">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Solutions</h4>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">AI
+                  Agents</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Workflow
+                  Automation</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Custom
+                  Applications</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Cloud
+                  Solutions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 lg:col-2">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Support</h4>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Help
+                  Center</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  class="mb-3 inline-block text-body-dark-11 hover:text-primary">Documentation</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">AI
+                  Integration Guides</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="mb-3 inline-block text-body-dark-11 hover:text-primary">System
+                  Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 -order-3 lg:col-4 lg:order-1">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Subscribe</h4>
+
+            <p class="text-body-dark-11">
+              Subscribe to our newsletter for the latest updates
+            </p>
+
+            <form action="#" method="POST" target="_blank" class="mt-8 flex">
+              <input type="email" name="email"
+                class="inline-block flex-grow px-5 py-3 rounded-md rounded-e-none border border-solid border-alpha-dark text-inherit text-base focus:border-primary"
+                placeholder="Email address" required />
+
+              <button type="submit"
+                class="inline-block py-3 w-[50px] rounded-md rounded-s-none text-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10">
+                <i class="lni lni-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="w-full border-t border-solid border-alpha-dark"></div>
+    <div class="container py-8">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2">
+          <div class="my-1">
+            <div class="flex flex-wrap justify-center gap-x-3 md:justify-start">
+              <a href="/privacy-policy.html" class="text-body-dark-11 hover:text-body-dark-12">Privacy Policy</a>
+              <a href="/legal-notice.html" class="text-body-dark-11 hover:text-body-dark-12">Legal Notice</a>
+              <a href="/terms-and-conditions.html" class="text-body-dark-11 hover:text-body-dark-12">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <div class="my-1 flex justify-center md:justify-end">
+            <p class="text-body-dark-11">
+              &#169; 2025 Xavirgin.com All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button"
+    class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+    data-web-trigger="scroll-top" aria-label="Scroll to top">
+    <i class="lni lni-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Scroll Reveal
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "16px",
+      duration: 1000,
+      reset: false,
+    });
+
+    sr.reveal(`.scroll-revealed`, {
+      cleanup: true,
+    });
+
+    // GLightBox
+    GLightbox({
+      selector: ".video-popup",
+      href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
+      type: "video",
+      source: "youtube",
+      width: 900,
+      autoplayVideos: true,
+    });
+
+    const myGallery3 = GLightbox({
+      selector: ".portfolio-box",
+      type: "image",
+      width: 900,
+    });
+
+    // Testimonial
+    const testimonialSwiper = new Swiper(".testimonial-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
