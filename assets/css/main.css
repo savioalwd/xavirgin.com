@@ -584,7 +584,7 @@ ol {
 strong {
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 strong:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -602,7 +602,7 @@ h6 {
   text-wrap: pretty;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 h1:where([data-web-theme=dark], [data-web-theme=dark] *),
@@ -928,7 +928,8 @@ p+p {
   position: fixed;
   z-index: 9999;
   border-color: #00073527;
-background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparent */
+  background-color: rgba(20, 20, 20, 0.95);
+  /* slightly darker, semi-transparent */
 
   --tw-bg-opacity: 0.75;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -947,7 +948,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .ic-navbar.sticky .ic-navbar-logo {
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 .ic-navbar.sticky .ic-navbar-logo:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -961,7 +962,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .ic-navbar.sticky .ic-navbar-toggler {
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 .ic-navbar.sticky .ic-navbar-toggler:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -977,7 +978,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 @media (min-width: 1024px) {
   .ic-navbar.sticky .ic-page-scroll {
     --tw-text-opacity: 1;
-    color: rgb(30 31 36 / var(--tw-text-opacity));
+    color: #FFF;
   }
 
   .ic-navbar.sticky .ic-page-scroll:hover {
@@ -1013,7 +1014,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .ic-navbar.sticky [data-web-trigger="web-theme"] {
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 .ic-navbar.sticky [data-web-trigger="web-theme"]:where([data-web-theme=dark], [data-web-theme=dark] *) {
@@ -1127,7 +1128,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
   background-color: rgb(252 252 253 / var(--tw-bg-opacity));
   font-size: 22px;
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1736,7 +1737,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .\!bg-primary {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(55 55 55 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(55_55_55/var(--tw-bg-opacity)) !important;
 }
 
 .bg-blue-500 {
@@ -1759,12 +1760,12 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .bg-green-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 83 209  / var(--tw-bg-opacity));
+  background-color: rgb(88 83 209 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 55 55 / var(--tw-bg-opacity));
+  background-color: rgb(55_55_55/var(--tw-bg-opacity));
 }
 
 .bg-primary-color {
@@ -2066,7 +2067,7 @@ background-color: rgba(230, 230, 230, 0.95); /* slightly darker, semi-transparen
 
 .text-body-light-12 {
   --tw-text-opacity: 1;
-  color: rgb(30 31 36 / var(--tw-text-opacity));
+  color: #FFF;
 }
 
 .text-inherit {
