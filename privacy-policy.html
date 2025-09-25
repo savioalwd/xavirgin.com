@@ -40,12 +40,26 @@
     <link rel="canonical" href="https://xavirgin.com/privacy-policy" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/web-app-manifest-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/web-app-manifest-512x512.png" />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest.json" />
-    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#3d63dd" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#3d63dd" />
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#3d63dd" />
 
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -79,9 +93,8 @@
         <div class="container">
             <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
                 <div class="flex items-center px-5 py-4 w-60 lg:w-56 max-w-full">
-                    <a href="."
-                        class="text-primary-color text-3xl font-bold tracking-tight hover:text-primary-hover transition-colors">
-                        Xavirgin.com
+                    <a href="." id="NavbarBrand" class="block w-full">
+                        <img src="/assets/img/logo.png" alt="Company Logo" class="h-auto max-w-full" />
                     </a>
                 </div>
 
@@ -148,7 +161,7 @@
                         At Xavirgin, we respect your privacy and are committed to protecting your personal information.
                     </p>
                     <div class="grid grid-cols-1 gap-8">
-                        <div>
+                        <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Information We Collect</h3>
                             <p>
                                 We may collect personal information such as your name, email address, phone number, and
@@ -156,7 +169,7 @@
                                 information may also be collected automatically to improve your experience.
                             </p>
                         </div>
-                        <div>
+                        <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">How We Use Your Data</h3>
                             <p>
                                 Your information is used to provide, personalize, and improve our services, respond to
@@ -164,7 +177,7 @@
                                 personal data to third parties.
                             </p>
                         </div>
-                        <div>
+                       <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Data Protection</h3>
                             <p>
                                 We implement industry-standard security measures to safeguard your data against
@@ -172,7 +185,7 @@
                                 reviewed to ensure protection of your information.
                             </p>
                         </div>
-                        <div>
+                        <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Cookies and Tracking</h3>
                             <p>
                                 Our website may use cookies or similar technologies to enhance your browsing experience,
@@ -180,7 +193,7 @@
                                 through your browser.
                             </p>
                         </div>
-                        <div>
+                         <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Your Rights</h3>
                             <p>
                                 You have the right to access, correct, or request deletion of your personal data. To
@@ -189,7 +202,7 @@
                                     class="text-primary hover:underline">contact@xavirgin.com</a>.
                             </p>
                         </div>
-                        <div>
+                        <div class="mb-8">
                             <h3 class="text-xl font-semibold mb-4">Governing Law</h3>
                             <p>
                                 This Privacy Policy is governed by the laws of India. Any disputes related to privacy
@@ -207,8 +220,8 @@
             <div class="row">
                 <div class="col-12 order-first lg:col-4">
                     <div class="w-full">
-                        <a href="." class="inline-block mb-5 text-3xl font-bold text-inherit">
-                            xavirgin.com
+                        <a href="." class="inline-block mb-5">
+                            <img src="./assets/img/logo.png" alt="Xavirgin Logo" class="h-10 lg:h-12 w-auto" />
                         </a>
                         <p class="mb-8 text-body-dark-11">
                             We craft AI-powered solutions and digital experiences that help brands and businesses
@@ -315,6 +328,8 @@
                                 Notice</a>
                             <a href="/terms-and-conditions.html" class="text-body-dark-11 hover:text-body-dark-12">Terms
                                 of Service</a>
+                            <a href="/workplace-policy.html" class="text-body-dark-11 hover:text-body-dark-12">Workplace
+                                Policy</a>
                         </div>
                     </div>
                 </div>
