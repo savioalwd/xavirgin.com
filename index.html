@@ -2,6 +2,16 @@
 <html lang="en" class="dark">
 
 <head>
+  <style>
+    html[data-theme-loaded="false"] body {
+      visibility: hidden;
+      /* hide content until dark theme applied */
+    }
+  </style>
+  <script>
+    // Immediately mark the theme as loaded
+    document.documentElement.dataset.themeLoaded = "true";
+  </script>
   <!-- Meta Tags -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
