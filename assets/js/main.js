@@ -19,23 +19,23 @@ const navbar = document.querySelector(".ic-navbar"),
 
 // Toggle the menu to STATE (true: open, false: close, undefined: toggle).
 function toggleNavbarMenu(state) {
-  switch(state) {
-  case true:
-    navbar.classList.add("menu-show");
-    navbarToggler.ariaExpanded = "true";
-    navbarToggler.innerHTML = '<i class="lni lni-close"></i>'
-    break;
-  case false:
-    navbar.classList.remove("menu-show");
-    navbarToggler.ariaExpanded = "false";
-    navbarToggler.innerHTML = '<i class="lni lni-menu"></i>'
-    break;
-  case undefined:               // toggle
-    if (navbar.classList.contains("menu-show")) {
-      toggleNavbarMenu(false);
-    } else {
-      toggleNavbarMenu(true);
-    }
+  switch (state) {
+    case true:
+      navbar.classList.add("menu-show");
+      navbarToggler.ariaExpanded = "true";
+      navbarToggler.innerHTML = '<i class="lni lni-close"></i>'
+      break;
+    case false:
+      navbar.classList.remove("menu-show");
+      navbarToggler.ariaExpanded = "false";
+      navbarToggler.innerHTML = '<i class="lni lni-menu"></i>'
+      break;
+    case undefined:               // toggle
+      if (navbar.classList.contains("menu-show")) {
+        toggleNavbarMenu(false);
+      } else {
+        toggleNavbarMenu(true);
+      }
   }
 }
 
@@ -45,7 +45,7 @@ document.addEventListener("click", function (e) {
   var y = e.clientY;
   var elementMouseIsOver = document.elementFromPoint(x, y);
 
-  if(navbarToggler.contains(elementMouseIsOver)) {
+  if (navbarToggler.contains(elementMouseIsOver)) {
     toggleNavbarMenu();
   } else {
     toggleNavbarMenu(false);
@@ -66,30 +66,29 @@ const webTheme = document.querySelector("[data-web-trigger=web-theme]"),
   html = document.querySelector("html");
 
 window.addEventListener("load", function () {
-  var theme = localStorage.getItem("Inazuma_WebTheme");
-
-  if (theme == "light") {
+  var theme = localStorage.getItem("xavirgin_webtheme");
+  if (!theme) {
+    theme = "dark"; // default to dark
+    localStorage.setItem("xavirgin_webtheme", theme);
+  }
+  // Update icon
+  if (theme === "light") {
     webTheme.innerHTML = '<i class="lni lni-sun"></i>';
-  } else if (theme == "dark") {
-    webTheme.innerHTML = '<i class="lni lni-night"></i>';
   } else {
-    theme = "light";
-    localStorage.setItem("Inazuma_WebTheme", theme);
     webTheme.innerHTML = '<i class="lni lni-night"></i>';
   }
-
   html.dataset.webTheme = theme;
 });
 
 webTheme.addEventListener("click", function () {
-  var theme = localStorage.getItem("Inazuma_WebTheme");
+  var theme = localStorage.getItem("xavirgin_webtheme");
 
   webTheme.innerHTML =
     theme == "dark"
       ? '<i class="lni lni-sun"></i>'
       : '<i class="lni lni-night"></i>';
   theme = theme == "dark" ? "light" : "dark";
-  localStorage.setItem("Inazuma_WebTheme", theme);
+  localStorage.setItem("xavirgin_webtheme", theme);
   html.dataset.webTheme = theme;
 });
 
